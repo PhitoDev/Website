@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Ralph Dugue | Software Engineer',
+  title: 'Phito | ML Engineer',
   description: 'Ralph Dugue is a software engineer, and quadriplegic wheelchair user.',
 };
 
@@ -49,7 +49,7 @@ export default function Home() {
                 Ralph Dugue
               </Typography>
               <Typography variant="h5" color="text.primary" gutterBottom sx={{ fontWeight: 600 }}>
-                Software Engineer
+                Self-Taught Machine Learning Engineer
               </Typography>
               <Typography variant="body1" color="text.secondary" paragraph sx={{ mb: 4, lineHeight: 1.8, fontSize: '1.1rem' }}>
                 I'm a software engineer, and quadriplegic wheelchair user. I'm passionate about accessibility, and creating software that improves the lives of others. Professionally, I have been a software engineer for over a decade, doing full-stack mobile and web development for small to medium, fast growing businesses. More recently I have been working a lot with machine learning and generative AI. I enjoy working with Kotlin and Python. I also have experience with TypeScript and modern web frameworks like Next.js. In my free time I am a videogame nerd, basketball nerd, and chess nerd.

@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Ralph Dugue | Software Engineer",
+  title: "Phito | ML Engineer",
   description: "Ralph Dugue is a software engineer, and quadriplegic wheelchair user.",
 };
 
