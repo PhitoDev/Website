@@ -2,6 +2,17 @@ import { getPostBySlug } from '@/lib/markdown';
 import { notFound } from 'next/navigation';
 import { Typography, Box, Container } from '@mui/material';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = getPostBySlug(resolvedParams.slug);
+  if (!post) return {};
+  return {
+    title: `Ralph Dugue | ${post.frontmatter.title}`,
+    description: post.frontmatter.description || 'Blog post by Ralph Dugue',
+  };
+}
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string[] }> }) {
   const resolvedParams = await params;

@@ -1,5 +1,11 @@
 import { Typography, Container, Box, Grid, Card, CardContent, Button } from '@mui/material';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ralph Dugue | Software Engineer',
+  description: 'Ralph Dugue is a software engineer, and quadriplegic wheelchair user.',
+};
 
 export default function Home() {
   const socials = [
@@ -38,7 +44,7 @@ export default function Home() {
               />
             </Grid>
             <Grid size={{ xs: 12, md: 8 }} textAlign={{ xs: 'center', md: 'left' }}>
-              <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 900, letterSpacing: '-0.02em', background: 'linear-gradient(45deg, #60A5FA, #A78BFA)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 900, letterSpacing: '-0.02em', background: 'linear-gradient(45deg, #fdb927, #FFFFFF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
                 Ralph Dugue
               </Typography>
               <Typography variant="h5" color="text.primary" gutterBottom sx={{ fontWeight: 600 }}>
@@ -49,7 +55,7 @@ export default function Home() {
               </Typography>
               <Box sx={{ display: 'flex', gap: 2, justifyContent: { xs: 'center', md: 'flex-start' }, flexWrap: 'wrap' }}>
                 <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                  <Button variant="contained" size="large" sx={{ background: 'linear-gradient(45deg, #3B82F6 30%, #8B5CF6 90%)', px: 4 }}>
+                  <Button variant="contained" size="large" sx={{ background: 'linear-gradient(45deg, #552582 30%, #fdb927 90%)', px: 4 }}>
                     Resume
                   </Button>
                 </Link>

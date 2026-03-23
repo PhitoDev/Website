@@ -9,19 +9,19 @@ export const inter = Inter({
 const theme = createTheme({
   palette: {
     mode: 'dark',
-    background: {
-      default: '#0A0A0A',
-      paper: '#121212',
-    },
     primary: {
-      main: '#3B82F6',
-      light: '#60A5FA',
-      dark: '#2563EB',
+      main: '#fdb927', // Brand Gold
+      light: '#fdc652',
+      dark: '#b1811b',
     },
     secondary: {
-      main: '#8B5CF6',
-      light: '#A78BFA',
-      dark: '#7C3AED',
+      main: '#552582', // Brand Purple
+      light: '#77519b',
+      dark: '#3b195b',
+    },
+    background: {
+      default: '#0a080d',
+      paper: 'rgba(255, 255, 255, 0.04)',
     },
     text: {
       primary: '#F3F4F6',

@@ -73,8 +73,10 @@ export default function BlogFilterTabs({ initialPosts }: { initialPosts: Post[] 
                                         sx={{ 
                                             width: '100%', 
                                             height: 200, 
-                                            objectFit: 'cover',
-                                            borderBottom: '1px solid rgba(255,255,255,0.08)'
+                                            objectFit: 'contain',
+                                            p: 3,
+                                            borderBottom: '1px solid rgba(255,255,255,0.05)',
+                                            backgroundColor: 'rgba(0,0,0,0.2)'
                                         }} 
                                         onError={(e) => { e.currentTarget.style.display = 'none'; }}
                                     />

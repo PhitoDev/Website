@@ -1,6 +1,12 @@
 import { getAllPosts } from '@/lib/markdown';
 import { Typography, Container } from '@mui/material';
 import BlogFilterTabs from '@/components/BlogFilterTabs';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ralph Dugue | Blog',
+  description: 'Blog posts by Ralph Dugue',
+};
 
 export default function BlogList() {
   const posts = getAllPosts();

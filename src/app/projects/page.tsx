@@ -1,6 +1,12 @@
 import { Typography, Container, Box, Grid, Card, CardContent } from '@mui/material';
 import { fetchProjects, getThumbnail } from '@/lib/github';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ralph Dugue | Projects',
+  description: 'Projects by Ralph Dugue hosted on GitHub',
+};
 
 export default async function Projects() {
   const projects = await fetchProjects();
@@ -30,7 +36,7 @@ export default async function Projects() {
                     src={getThumbnail(project.topics || [])} 
                     alt={project.name}
                     loading="lazy"
-                    sx={{ width: 48, height: 48, objectFit: 'contain', mb: 3 }} 
+                    sx={{ width: 80, height: 80, objectFit: 'contain', mb: 3, mx: 'auto' }} 
                   />
                   <Typography variant="h5" gutterBottom color="text.primary" sx={{ fontWeight: 700 }}>
                     {project.name}
