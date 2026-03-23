@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Navbar from "@/components/Navbar";
+import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Website Rewrite",
-  description: "Updated for 2026",
+  title: "Modern Digital Space",
+  description: "A redesigned technical portfolio and blog.",
 };
 
 export default function RootLayout({
@@ -24,10 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>
+    <html lang="en">
+      <body style={{ margin: 0, padding: 0, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <ThemeRegistry>
-          {children}
+          <Navbar />
+          <Box component="main" sx={{ flexGrow: 1 }}>
+            {children}
+          </Box>
         </ThemeRegistry>
       </body>
     </html>
