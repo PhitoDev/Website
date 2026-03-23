@@ -59,3 +59,13 @@ export function getAllPosts() {
     return new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime();
   });
 }
+
+export function getResumeContent() {
+  const fullPath = path.join(contentDirectory, 'resume.md');
+  if (fs.existsSync(fullPath)) {
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const { data, content } = matter(fileContents);
+    return { frontmatter: data, content };
+  }
+  return null;
+}

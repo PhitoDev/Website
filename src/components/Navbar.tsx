@@ -19,6 +19,9 @@ export default function Navbar() {
           <Button component={Link} href="/projects" color="inherit" sx={{ '&:hover': { background: 'rgba(255,255,255,0.05)' } }}>
             Projects
           </Button>
+          <Button component={Link} href="/resume" color="inherit" sx={{ '&:hover': { background: 'rgba(255,255,255,0.05)' } }}>
+            Resume
+          </Button>
         </Box>
       </Toolbar>
     </AppBar>

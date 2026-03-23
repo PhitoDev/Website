@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# obsidian
+/content/.obsidian
+
 # production
 /build
 
