@@ -1,28 +1,32 @@
 {
+  "name": "next-temp",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --host",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/content": "latest",
-    "@nuxt/postcss8": "latest",
-    "@tailwindcss/typography": "latest",
-    "autoprefixer": "latest",
-    "netlify-cli": "latest",
-    "nuxt": "latest",
-    "postcss": "latest",
-    "sass": "latest",
-    "sass-loader": "latest",
-    "tailwindcss": "latest"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@oruga-ui/oruga-next": "latest",
-    "@oruga-ui/theme-bulma": "latest",
-    "bulma": "latest",
-    "date-fns": "^2.29.3"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.9",
+    "date-fns": "^4.1.0",
+    "decap-cms-app": "^3.10.1",
+    "gray-matter": "^4.0.3",
+    "markdown-to-jsx": "^9.7.13",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sass": "^1.98.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "typescript": "^5"
   }
 }
