@@ -9,22 +9,9 @@ export default function Navbar() {
     <AppBar position="sticky">
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
-          <Typography
-            variant="h6"
-            component={Link}
-            href="/"
-            sx={{
-              fontWeight: 800,
-              color: 'text.primary',
-              textDecoration: 'none',
-              letterSpacing: '-0.02em',
-              background: 'linear-gradient(45deg, #3B82F6, #8B5CF6)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
-          >
-            Digital Space
-          </Typography>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <Box component="img" src="/brand.svg" alt="Ralph Dugue Logo" sx={{ height: { xs: 40, md: 50 }, width: 'auto', filter: 'drop-shadow(0px 2px 4px rgba(0,0,0,0.5))' }} />
+          </Link>
 
           <Box sx={{ display: 'flex', gap: 2 }}>
             <Button component={Link} href="/blog" color="inherit" sx={{ '&:hover': { background: 'rgba(255,255,255,0.05)' } }}>
