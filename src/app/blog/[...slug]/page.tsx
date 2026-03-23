@@ -1,4 +1,12 @@
-import { getPostBySlug } from '@/lib/markdown';
+import { getPostBySlug, getAllPosts } from '@/lib/markdown';
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: [post.slug],
+  }));
+}
+
 import { notFound } from 'next/navigation';
 import { Typography, Box, Container } from '@mui/material';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
