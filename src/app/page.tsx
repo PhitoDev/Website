@@ -23,10 +23,11 @@ export default function Home() {
         px: 2,
         display: 'flex',
         alignItems: 'center',
+        minHeight: { md: 'calc(100vh - 64px)' },
         background: 'radial-gradient(circle at 10% 20%, rgba(85, 37, 130, 0.15) 0%, transparent 60%)',
         overflow: 'hidden'
       }}>
-        <Container maxWidth="md">
+        <Container maxWidth="xl">
           <Grid container spacing={6} alignItems="center">
             <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent={{ xs: 'center', md: 'flex-start' }}>
               <Box 
@@ -70,7 +71,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Container maxWidth="md" sx={{ py: 8, mb: 8 }}>
+      <Container maxWidth="xl" sx={{ py: 8, mb: 8 }}>
         <Typography variant="h3" component="h2" gutterBottom textAlign="center" sx={{ mb: 6, fontWeight: 800 }}>
           Connect With Me
         </Typography>

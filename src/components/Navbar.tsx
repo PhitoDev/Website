@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <AppBar position="sticky">
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
             <Box component="img" src="/brand.svg" alt="Ralph Dugue Logo" sx={{ height: { xs: 40, md: 50 }, width: 'auto', filter: 'drop-shadow(0px 2px 4px rgba(0,0,0,0.5))' }} />

@@ -12,7 +12,7 @@ export default function BlogList() {
   const posts = getAllPosts();
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
+    <Container maxWidth="xl" sx={{ py: { xs: 6, md: 10 } }}>
       <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 800, mb: 6, textAlign: 'center', letterSpacing: '-0.02em', background: 'linear-gradient(to right, #F3F4F6, #9CA3AF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
         Articles & Thoughts
       </Typography>
