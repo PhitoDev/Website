@@ -61,7 +61,7 @@ export default function BlogFilterTabs({ initialPosts }: { initialPosts: Post[] 
                                 cursor: 'pointer',
                                 '&:hover': {
                                     borderColor: 'primary.main',
-                                    boxShadow: '0 8px 30px rgba(59, 130, 246, 0.15)',
+                                    boxShadow: '0 8px 30px rgba(253, 185, 39, 0.15)',
                                     transform: 'translateY(-4px)'
                                 }
                             }}>

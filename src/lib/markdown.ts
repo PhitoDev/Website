@@ -43,6 +43,7 @@ export function getAllPosts() {
         const fullPath = path.join(dirPath, file);
         const fileContents = fs.readFileSync(fullPath, 'utf8');
         const { data } = matter(fileContents);
+        if (data.stage && data.stage !== 'publish') return; // Skip drafts
         posts.push({
           slug: file.replace(/\.md$/, ''),
           collection: dir,

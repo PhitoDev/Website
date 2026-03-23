@@ -23,7 +23,7 @@ export default function Home() {
         px: 2,
         display: 'flex',
         alignItems: 'center',
-        background: 'radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 60%)',
+        background: 'radial-gradient(circle at 10% 20%, rgba(85, 37, 130, 0.15) 0%, transparent 60%)',
         overflow: 'hidden'
       }}>
         <Container maxWidth="md">
@@ -81,7 +81,7 @@ export default function Home() {
                 <Card sx={{ 
                   display: 'flex', alignItems: 'center', justifyContent: 'center', 
                   width: 100, height: 100, borderRadius: '50%',
-                  '&:hover': { transform: 'translateY(-4px)', borderColor: 'primary.main', boxShadow: '0 8px 30px rgba(59, 130, 246, 0.2)' }
+                  '&:hover': { transform: 'translateY(-4px)', borderColor: 'primary.main', boxShadow: '0 8px 30px rgba(253, 185, 39, 0.2)' }
                 }}>
                   <Box component="img" src={social.imageUrl} alt={social.alt} sx={{ width: 40, height: 40 }} />
                 </Card>

@@ -49,7 +49,7 @@ const theme = createTheme({
           padding: '10px 24px',
           boxShadow: 'none',
           '&:hover': {
-            boxShadow: '0px 4px 14px rgba(59, 130, 246, 0.4)',
+            boxShadow: '0px 4px 14px rgba(253, 185, 39, 0.35)',
             transform: 'translateY(-1px)',
           },
           transition: 'all 0.2s ease-in-out',
@@ -71,7 +71,7 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: 'rgba(10, 10, 10, 0.7)',
+          backgroundColor: 'rgba(10, 8, 13, 0.85)',
           backdropFilter: 'blur(12px)',
           backgroundImage: 'none',
           boxShadow: 'none',

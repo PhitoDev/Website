@@ -6,8 +6,8 @@ import Navbar from "@/components/Navbar";
 import { Box } from "@mui/material";
 
 export const metadata: Metadata = {
-  title: "Modern Digital Space",
-  description: "A redesigned technical portfolio and blog.",
+  title: "Ralph Dugue | Software Engineer",
+  description: "Ralph Dugue is a software engineer, and quadriplegic wheelchair user.",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, padding: 0, minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#0A0A0A' }}>
+      <body style={{ margin: 0, padding: 0, minHeight: '100dvh', display: 'flex', flexDirection: 'column', backgroundColor: '#0a080d' }}>
         <AppRouterCacheProvider>
           <ThemeRegistry>
             <Navbar />

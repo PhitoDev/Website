@@ -26,7 +26,7 @@ export default async function Projects() {
                   flexDirection: 'column',
                   '&:hover': {
                     borderColor: 'secondary.main',
-                    boxShadow: '0 8px 30px rgba(139, 92, 246, 0.15)',
+                    boxShadow: '0 8px 30px rgba(253, 185, 39, 0.15)',
                     transform: 'translateY(-4px)'
                   }
                }}>
