@@ -1,3 +1,6 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+
 export interface GitHubProject {
     name: string;
     owner: {
@@ -34,14 +37,33 @@ export const getThumbnail = (topics: string[]): string => {
 
 export async function fetchProjects(): Promise<GitHubProject[]> {
     try {
-        const res = await fetch('https://api.github.com/orgs/PhitoDev/repos', {
-            next: { revalidate: 3600 }
-        });
-        if (!res.ok) {
-            console.error('Failed to fetch from github API:', res.statusText);
+        const filePath = path.join(process.cwd(), 'public', 'admin', 'projects.txt');
+        let fileContent = '';
+        try {
+            fileContent = await fs.readFile(filePath, 'utf-8');
+        } catch (err) {
+            console.error('Error reading projects.txt:', err);
             return [];
         }
-        const repos: GitHubProject[] = await res.json();
+
+        const repoNames = fileContent
+            .split('\n')
+            .map(line => line.trim())
+            .filter(line => line.length > 0);
+
+        const fetchPromises = repoNames.map(async (repo) => {
+            const res = await fetch(`https://api.github.com/repos/${repo}`, {
+                next: { revalidate: 3600 }
+            });
+            if (!res.ok) {
+                console.error(`Failed to fetch from github API for ${repo}:`, res.statusText);
+                return null;
+            }
+            return res.json();
+        });
+
+        const results = await Promise.all(fetchPromises);
+        const repos: GitHubProject[] = results.filter(r => r !== null) as GitHubProject[];
         
         // Filter out irrelevant or empty repositories if needed, and sort
         return repos.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());

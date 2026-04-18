@@ -106,7 +106,7 @@ export default async function Projects() {
         ) : (
           <Grid size={{ xs: 12 }}>
             <Typography variant="body1" color="text.secondary">
-              Loading or no projects found from GitHub org.
+              Loading or no projects found.
             </Typography>
           </Grid>
         )}
