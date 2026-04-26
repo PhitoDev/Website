@@ -16,7 +16,7 @@ I can remember hanging out with my brothers as child, and watching them play vid
 
 This is what lead me to studying computer science at Florida State University. My junior year, I was convinced by one of my favorite professors, now Dr. Frank Sposaro, to take his course on mobile development. This is where I learned about a new open source mobile OS and SDK developed by Google. I upgraded my current phone at the time and began learning how to build apps. The first app I ever made was jokingly named "StayWoke." This was of course to address an accessibility concern I had. The accessibility options were extremely limited in the early days of Android, and screen timeouts were exhausting due to my physical disabilities. StayWoke simply kept the screen awake at all times using a background service. It was as a very simple solution, as I said, but a deeply rewarding experience. It was that simple project that got me an internship and then a research assistant position my senior year. 
 
-And before I knew it, I was working professionally as an Android engineer. 
+I was working professionally as an Android engineer soon after graduation. 
 
 ## The Health Issues 
 In July of 2022, I contracted COVID-19. Due to my existing health issues, it would lead to a couple of weeks in the hospital. 

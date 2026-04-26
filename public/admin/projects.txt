@@ -1,3 +1,4 @@
+PhitoDev/PowerMouse
 PhitoDev/phito-deep
 rdugue/Machine-Learning-Study
 rdugue/TensorTonic-Solutions
