@@ -1,12 +1,4 @@
-import {
-    Typography,
-    Container,
-    Box,
-    Grid,
-    Card,
-    CardContent,
-    Button,
-} from "@mui/material";
+import { Typography, Container, Box, Grid, Card, Button } from "@mui/material";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -29,14 +21,14 @@ export default function Home() {
             alt: "Visit my Github",
         },
         {
-            linkUrl: "https://www.twitch.tv/kingphito",
-            imageUrl: "/img/socials/twitch.svg",
-            alt: "Visit my Twitch channel",
+            linkUrl: "https://neetcode.io/profile",
+            imageUrl: "/img/socials/neetcode-io-logo.png",
+            alt: "Visit my NeetCode.io profile",
         },
         {
             linkUrl: "https://www.tensortonic.com/profile/kingphito",
             imageUrl: "/img/socials/ttsvg.svg",
-            alt: "Vist my TensorTonic account",
+            alt: "Vist my TensorTonic profile",
         },
     ];
 
