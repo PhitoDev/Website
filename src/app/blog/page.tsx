@@ -4,8 +4,8 @@ import BlogFilterTabs from '@/components/BlogFilterTabs';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Ralph Dugue | Blog',
-  description: 'Blog posts by Ralph Dugue',
+  title: 'Phito | Blog',
+  description: 'Writings by Ralph Dugue',
 };
 
 export default function BlogList() {

@@ -11,8 +11,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ralph Dugue | Projects",
-  description: "Projects by Ralph Dugue hosted on GitHub",
+  title: "Phito | Projects",
+  description: "Projects by Phitod on GitHub",
 };
 
 export default async function Projects() {

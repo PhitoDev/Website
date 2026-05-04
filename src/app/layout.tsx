@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 export const metadata: Metadata = {
   title: "Phito | ML Engineer",
   description:
-    "Ralph Dugue is a quadriplegic wheelchair user, software engineer, and machine learning engineer.",
+      "Phito is about leveraging artificial intelligence to create an inclusive world.",
 };
 
 export default function RootLayout({

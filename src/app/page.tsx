@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Phito | ML Engineer",
     description:
-        "Ralph Dugue is a software engineer, and quadriplegic wheelchair user.",
+        "Phito is about leveraging artificial intelligence to create an inclusive world.",
 };
 
 export default function Home() {
