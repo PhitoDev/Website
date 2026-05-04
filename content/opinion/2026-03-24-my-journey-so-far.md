@@ -4,7 +4,7 @@ title: My Transition Into Machine Learning
 description: Re-introducing myself, opening up about health issues and the gap,
   and sharing my career plans going forward.
 content: opinion
-stage: draft
+stage: publish
 date: 2026-03-24T19:41:00.000-04:00
 thumbnail: /images/uploads/site_logo.png
 ---
