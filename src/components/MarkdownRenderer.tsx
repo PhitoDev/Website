@@ -50,21 +50,18 @@ type PreProps = {
 };
 
 function Pre({ children }: PreProps) {
-    if (
-        React.isValidElement<CodeBlockProps>(children) &&
-        (children.type === "code" ||
-            (typeof children.type === "function" &&
-                (children.type as { name?: string }).name === "code"))
-    ) {
+    // markdown-to-jsx renders fenced code as <pre><code class="lang-xxx">...</code></pre>.
+    // After our `code` override runs, the child element's `type` is our custom
+    // function rather than the string "code", so we can't rely on type checks.
+    // Instead, unwrap whatever element is inside <pre> and forward its props.
+    if (React.isValidElement<CodeBlockProps>(children)) {
         return (
-            <CodeBlock
-                className={children.props.className}
-            >
+            <CodeBlock className={children.props.className}>
                 {children.props.children}
             </CodeBlock>
         );
     }
-    return <pre>{children}</pre>;
+    return <CodeBlock>{children}</CodeBlock>;
 }
 
 export default function MarkdownRenderer({ content }: { content: string }) {
